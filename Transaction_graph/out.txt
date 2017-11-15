@@ -1,0 +1,9 @@
+loading graph . . . 
+
+took  50.0  seconds
+
+order:  434100
+max in-degree:  673
+max out-degree:  1241
+longest path length:  363
+number of components:  32566
