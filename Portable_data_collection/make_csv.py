@@ -13,6 +13,8 @@ if len(sys.argv) == 4:
         filename_log = filename_log + '.log'
         log = open(filename_log, "w")
         log.write("Blocks logged in csv\r\n")
+        file.close()
+        log.close()
         dt.build_entire_csv(sys.argv[1], sys.argv[2], int(sys.argv[3]))
 else:
         print('usage: python2.7, make_csv.py, start block hash, *.csv, number of blocks')
