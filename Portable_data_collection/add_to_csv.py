@@ -23,6 +23,7 @@ if len(sys.argv) == 3:
 	block_hash = block["prev_block"]
 	print('starting to add at block '+block_hash+' but first we wait . . .')
 	time.sleep(10)	
+	f.close()
 	dt.build_entire_csv(block_hash, sys.argv[1], int(sys.argv[2]))
 else:
         print('usage: python2.7, add_to_csv.py, *.csv, number of blocks to add')
